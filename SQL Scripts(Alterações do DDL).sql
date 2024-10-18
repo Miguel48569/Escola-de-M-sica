@@ -29,20 +29,16 @@ add descricao text after nomeInstrumento;
 alter table instrumentos
 drop column descricao;
 
-ALTER TABLE `Função dos Músicos` 
-RENAME TO FuncaoDosMusicos;
+DROP TABLE IF EXISTS FuncaoDosMusicos;
 
-ALTER TABLE FuncaoDosMusicos 
-CHANGE `idFunção dos Músicos` idFuncaoDosMusicos INT PRIMARY KEY;
-
-ALTER TABLE FuncaoDosMusicos 
-CHANGE `nomeFuncao` nomeFuncao VARCHAR(100),
-CHANGE `descricaoFuncao` descricaoFuncao VARCHAR(255),
-CHANGE `dataInicio` dataInicio DATE,
-CHANGE `dataFim` dataFim DATE,
-CHANGE `Músicos_idMúsicos` Musicos_idMusicos INT,
-CHANGE `Sinfonias_idSinfonias` Sinfonias_idSinfonias INT;
-
+CREATE TABLE FuncaoDosMusicos (
+    idFuncaoDosMusicos INT PRIMARY KEY,
+    nomeFuncao VARCHAR(100),
+    descricaoFuncao VARCHAR(255),
+    dataInicio DATE,
+    dataFim DATE,
+    Musicos_idMusicos INT,
+    Sinfonias_idSinfonias INT
 
 
 
