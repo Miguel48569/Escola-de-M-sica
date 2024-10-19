@@ -44,6 +44,8 @@ CREATE TABLE FuncaoDosMusicos (
 alter table músicos
 rename column idMúsicos to idMusico
 
+rename table músicos to Musicos
+
 
 
 
