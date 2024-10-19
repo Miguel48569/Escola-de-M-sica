@@ -131,23 +131,3 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
-
--- View: Listar todos os músicos e suas nacionalidades
-CREATE VIEW ListaMusicos AS
-SELECT idMúsicos, nome, nacionalidade FROM Músicos;
-
--- View: Listar sinfonias e suas respectivas orquestras
-CREATE VIEW SinfoniasOrquestras AS
-SELECT S.nomeSinfonia, O.nomeOrquestra
-FROM Sinfonias S
-JOIN Orquestras O ON S.Orquestras_idOrquestras = O.idOrquestras;
-
--- View: Músicos e os instrumentos que tocam em sinfonias
-CREATE VIEW MusicosInstrumentos AS
-SELECT M.nome AS Musico, I.nomeInstrumento AS Instrumento, S.nomeSinfonia AS Sinfonia
-FROM ParticipacaoSinfoniaInstrumento P
-JOIN Músicos M ON P.Músicos_idMúsicos = M.idMúsicos
-JOIN Instrumentos I ON P.Instrumentos_idInstrumentos = I.idInstrumentos
-JOIN Sinfonias S ON P.Sinfonias_idSinfonias = S.idSinfonias;
-
