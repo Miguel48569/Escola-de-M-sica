@@ -40,6 +40,10 @@ CREATE TABLE FuncaoDosMusicos (
     Musicos_idMusicos INT,
     Sinfonias_idSinfonias INT
 
+    
+alter table músicos
+rename column idMúsicos to idMusico
+
 
 
 
