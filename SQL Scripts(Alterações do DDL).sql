@@ -31,7 +31,7 @@ drop column descricao;
 
 DROP TABLE IF EXISTS FuncaoDosMusicos;
 
-CREATE TABLE FuncaoDosMusicos
+CREATE TABLE FuncaoDosMusicos (
     idFuncaoDosMusicos INT PRIMARY KEY,
     nomeFuncao VARCHAR(100),
     descricaoFuncao VARCHAR(255),
@@ -39,6 +39,7 @@ CREATE TABLE FuncaoDosMusicos
     dataFim DATE,
     Musicos_idMusicos INT,
     Sinfonias_idSinfonias INT
+);
 
     
 alter table músicos
