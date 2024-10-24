@@ -10,6 +10,9 @@ UPDATE FuncaoDosMusicos
 SET nomeFuncao = 'Coordenador de Ensaios' 
 WHERE idFuncaoDosMusicos = 4;
 
+-- desativei: modo safe updates (atualizações seguras) está ativado
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE funcaodosmusicos
 SET descricaoFuncao = 'Responsável por ensaios e suporte adicional'
 WHERE nomeFuncao = 'Maestro';
@@ -89,49 +92,4 @@ DELETE FROM FuncaoDosMusicos
 WHERE Musicos_idMusicos = 7;
 
 SET SQL_SAFE_UPDATES = 1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
