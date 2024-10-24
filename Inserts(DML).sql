@@ -1,4 +1,4 @@
-insert into músicos (idMúsicos, nome, nacionalidade, dataNascimento, cpf) values
+insert into musicos (idMusico, nome, nacionalidade, dataNascimento, cpf) values
 (1, 'Ana Clara da Silva', 'Brasileira', '1990-03-15', '123.456.789-01'),
 (2, 'Carlos Eduardo Oliveira', 'Brasileiro', '1985-07-22', '234.567.890-12'),
 (3, 'Fernanda Gabriela Santos', 'Brasileira', '1992-11-30', '345.678.901-23'),
@@ -71,7 +71,6 @@ VALUES
 (8, 'Contrabaixista', 'Responsável pelas partes graves da orquestra.', '2023-04-01', '2024-01-01', 8, 8),
 (9, 'Trompetista', 'Líder da seção de metais.', '2023-06-15', '2023-12-20', 9, 9),
 (10, 'Harpa Solo', 'Responsável pelas performances de harpa.', '2023-07-01', '2023-12-31', 10, 10);
-
 
 
 
