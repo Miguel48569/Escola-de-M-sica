@@ -7,9 +7,7 @@ drop column telefone;
 alter table orquestras
 modify nomeOrquestra varchar(150);
 
-RENAME TABLE `Função dos Músicos` TO FuncoesMusicos; 
-
-RENAME TABLE FuncoesMusicos TO `Função dos Músicos`; 
+RENAME TABLE `Função dos Músicos` TO FuncaoDosMusicos; 
 
 alter table músicos
 modify dataNascimento datetime;
