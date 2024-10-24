@@ -1,16 +1,16 @@
-update músicos
-set nome = "Marcos de Palha"
-where idMúsicos = 1;
+update musicos
+set nome = 'Marcos de Palha'
+where idMusico = 1;
 
 UPDATE Sinfonias 
-SET descricao = 'Sinfonia revisada e ampliada para a nova temporada.' 
+SET dataCriacao = '1802-03-18' 
 WHERE idSinfonias = 3;
 
 UPDATE FuncaoDosMusicos 
 SET nomeFuncao = 'Coordenador de Ensaios' 
 WHERE idFuncaoDosMusicos = 4;
 
-UPDATE FuncaoDosMusicos 
+UPDATE funcaodosmusicos
 SET descricaoFuncao = 'Responsável por ensaios e suporte adicional'
 WHERE nomeFuncao = 'Maestro';
 
@@ -51,7 +51,7 @@ SET dataFim = '2023-12-31';
 -- ativei de volta
 SET SQL_SAFE_UPDATES = 1;
 
-UPDATE músicos 
+UPDATE musicos 
 SET nome = 'Carlos Silva'
 WHERE idMusico = 8;
 
@@ -63,7 +63,7 @@ UPDATE Sinfonias
 SET nomeSinfonia = 'Sinfonia Primavera' 
 WHERE idSinfonias = 3;
 
-UPDATE Músicos 
+UPDATE musicos 
 SET nome = 'João Gabriel de Medeiros Neto' 
 WHERE idMusico = 4;
 
