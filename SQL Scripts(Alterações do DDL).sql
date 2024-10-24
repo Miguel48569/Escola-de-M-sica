@@ -39,7 +39,7 @@ CREATE TABLE FuncaoDosMusicos (
     Sinfonias_idSinfonias INT
 );
 
-    
+   
 alter table músicos
 rename column idMúsicos to idMusico
 
